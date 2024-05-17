@@ -25,9 +25,9 @@ in quality work.
 Let's Talk
 
 .home_social
-https://github.com/
-https://dribbble.com/
-https://www.linkedin.com/
+https://github.com/khalidbinibrahim
+https://www.facebook.com/khalidbinibrahim01
+https://www.linkedin.com/in/khalidbinibrahim
 
 .home_social-icon (clip-path)
 polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
