@@ -14,9 +14,6 @@
       Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
 
       For more colors visit: https://colors.dopely.top/color-pedia
-      -> Choose any color 
-      -> click on tab (Color Conversion)
-      -> Copy the color mode (HSL)
   */
 
   --hue: 162;
@@ -150,7 +147,7 @@ svg {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -337,6 +334,11 @@ svg {
 
 .button:hover {
   box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+  /* color: var(--first-color); */
+  /* background-color: black; */
+  /* border: 2px; */
+  /* border-color: var(--first-color); */
+  /* border-style: solid; */
 }
 
 /*=============== ABOUT ===============*/
@@ -365,7 +367,48 @@ svg {
 }
 
 /*=============== SKILLS ===============*/
+.skills {
+  background-color: var(--container-color);
+}
 
+.skills_container {
+  padding-bottom: 2rem;
+  row-gap: 3.5rem;
+}
+
+.skills_data {
+  text-align: center;
+}
+
+.skills_description {
+  margin-bottom: 2rem;
+}
+
+.skills_content, 
+.skills_group {
+  display: grid;
+}
+
+.skills_content {
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.skills_group {
+  row-gap: 1rem;
+  list-style: decimal-leading-zero;
+}
+
+.skills_item {
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.skills_item::marker {
+  color: var(--first-color);
+}
 
 /*=============== SERVICES ===============*/
 
