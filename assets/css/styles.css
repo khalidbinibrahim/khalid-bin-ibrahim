@@ -334,11 +334,9 @@ svg {
 
 .button:hover {
   box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
-  /* color: var(--first-color); */
-  /* background-color: black; */
-  /* border: 2px; */
-  /* border-color: var(--first-color); */
-  /* border-style: solid; */
+  /* color: var(--first-color);
+  background-color: var(--container-color);
+  border: 2px solid var(--first-color); */
 }
 
 /*=============== ABOUT ===============*/
@@ -411,7 +409,35 @@ svg {
 }
 
 /*=============== SERVICES ===============*/
+.services_container {
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
 
+.services_card {
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 3rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid var(--container-color);
+  transition: border .4s;
+}
+
+.services_icon {
+  display: block;
+  font-size: 4rem;
+  color: var(--first-color);
+  margin-bottom: .75rem;
+}
+
+.services_title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.services_card:hover {
+  border: 2px solid var(--first-color);
+}
 
 /*=============== PROJECTS ===============*/
 
