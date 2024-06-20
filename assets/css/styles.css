@@ -510,7 +510,49 @@ svg {
 }
 
 /*=============== CONTACT ===============*/
+.contact_container {
+  padding-top: 1rem;
+}
 
+.contact_form,
+.contact_group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact_form {
+  position: relative;
+}
+
+.contact_input {
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contact_input::placeholder {
+  color: var(--text-color);
+}
+
+.contact_form textarea {
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contact_button {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact_message {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
 
 /*=============== FOOTER ===============*/
 
