@@ -152,7 +152,7 @@ Names: {{user_name}}
 
 Email: {{user_email}}
 
-Project: {{user_project}}
+Message: {{user_project}}
 
 Best wishes,
 EmailJS team
@@ -160,15 +160,15 @@ EmailJS team
 
 ========== FOOTER ==========
 .footer_title
-Khalid <span>Bin Ibrahim</span>
+<span>Khalid</span> Bin Ibrahim
 
 .footer_education
 Front-end Developer  
 
 .footer_social-link
-https://www.facebook.com/
-https://www.instagram.com/
-https://twitter.com/
+https://github.com/khalidbinibrahim
+https://www.linkedin.com/in/khalidbinibrahim
+https://x.com/khalid_bin_i
 
 .footer_copy
 &#169; Copyright Khalid Bin Ibrahim. All rights reserved
