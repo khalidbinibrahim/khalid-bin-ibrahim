@@ -135,7 +135,7 @@ Before proceeding, I recommend creating your EmailJs account(https://www.emailjs
 
 	// Show sent message
 
-		Message sent successfully
+		Message sent successfully ✅
 
 	// Remove message after five seconds
 
@@ -143,7 +143,7 @@ Before proceeding, I recommend creating your EmailJs account(https://www.emailjs
 
 	// Show error message
 
-		Message not sent (service error)
+		Message not sent (service error) ❌
 
 
 * Copy this code into your (Email Template)
