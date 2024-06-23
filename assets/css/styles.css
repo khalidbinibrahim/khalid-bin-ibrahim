@@ -1,17 +1,17 @@
-/*=============== GOOGLE FONTS ===============*/
+/* =============== GOOGLE FONTS =============== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* =============== VARIABLES CSS =============== */
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   /* 
-      Change favorite color
-      Default: hsl(162, 100%, 40%)
-      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
-      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
+      Change your favorite color
+      Green: hsl(162, 100%, 40%)
+      Blue: hsl(210, 100%, 70%)
+      Pink: hsl(356, 100%, 75%)
 
       For more colors visit: https://colors.dopely.top/color-pedia
   */
@@ -24,8 +24,7 @@
   --body-color: hsl(228, 15%, 20%);
   --container-color: hsl(228, 15%, 15%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /* ========== Font and typography ========== */
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.25rem;
@@ -36,17 +35,17 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /* ========== Font weight ========== */
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+  /* ========== z index ========== */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+/* ========== Responsive typography ========== */
 @media screen and (min-width: 1152px) {
   :root {
     --biggest-font-size: 4rem;
@@ -60,7 +59,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/* =============== BASE =============== */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -110,7 +109,7 @@ svg {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* =============== REUSABLE CSS CLASSES =============== */
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -150,7 +149,7 @@ svg {
   overflow: hidden;
 }
 
-/*=============== HEADER & NAV ===============*/
+/* =============== HEADER & NAV =============== */
 .header {
   position: fixed;
   width: 100%;
@@ -250,7 +249,7 @@ svg {
   color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
+/* =============== HOME =============== */
 .home {
   background-color: var(--container-color);
 }
@@ -323,7 +322,7 @@ svg {
   transform: translateX(-120px);
 } */
 
-/*=============== BUTTON ===============*/
+/* =============== BUTTON =============== */
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -341,7 +340,7 @@ svg {
   border: 2px solid var(--first-color); */
 }
 
-/*=============== ABOUT ===============*/
+/* =============== ABOUT =============== */
 .about_container {
   row-gap: 2.5rem;
 }
@@ -366,7 +365,7 @@ svg {
   stroke: var(--first-color);
 }
 
-/*=============== SKILLS ===============*/
+/* =============== SKILLS =============== */
 .skills {
   background-color: var(--container-color);
 }
@@ -410,7 +409,7 @@ svg {
   color: var(--first-color);
 }
 
-/*=============== SERVICES ===============*/
+/* =============== SERVICES =============== */
 .services_container {
   row-gap: 2rem;
   padding-block: 1rem;
@@ -441,7 +440,7 @@ svg {
   border: 2px solid var(--first-color);
 }
 
-/*=============== PROJECTS ===============*/
+/* =============== PROJECTS =============== */
 .projects {
   background-color: var(--container-color);
 }
@@ -511,7 +510,7 @@ svg {
   bottom: 0;
 }
 
-/*=============== CONTACT ===============*/
+/* =============== CONTACT =============== */
 .contact_container {
   padding-top: 1rem;
 }
@@ -556,7 +555,7 @@ svg {
   color: var(--title-color);
 }
 
-/*=============== FOOTER ===============*/
+/* =============== FOOTER =============== */
 .footer {
   background-color: var(--container-color);
   padding-block: 3.5rem 2rem;
@@ -606,7 +605,7 @@ svg {
   margin-top: 2rem;
 }
 
-/*=============== SCROLL BAR ===============*/
+/* =============== SCROLL BAR =============== */
 ::-webkit-scrollbar {
   width: .6rem;
   border-radius: .5rem;
@@ -622,7 +621,7 @@ svg {
   background-color: hsl(228, 8%, 45%);
 }
 
-/*=============== SCROLL UP ===============*/
+/* =============== SCROLL UP =============== */
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -647,7 +646,7 @@ svg {
   bottom: 3rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
+/* =============== BREAKPOINTS =============== */
 /* For small devices */
 @media screen and (max-width: 320px){
   .container {

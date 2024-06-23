@@ -1,4 +1,4 @@
-/*=============== SHOW MENU ===============*/
+/* =============== SHOW MENU =============== */
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -17,26 +17,24 @@ if (navClose) {
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+/* =============== REMOVE MENU MOBILE =============== */
 const navLink = document.querySelectorAll('.nav_link')
 
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== ADD BLUR TO HEADER ===============*/
+/* =============== ADD BLUR TO HEADER =============== */
 const blurHeader = () => {
     const header = document.getElementById('header')
-    // Add a class if the bottom offset is greater than 50 of the viewport
     this.scrollY >= 50 ? header.classList.add('blur-header')
         : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
 
-/*=============== EMAIL JS ===============*/
+/* =============== EMAIL JS =============== */
 const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message')
 
@@ -64,7 +62,7 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener('submit', sendEmail)
 
-/*=============== SHOW SCROLL UP ===============*/
+/* =============== SHOW SCROLL UP =============== */
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
 
@@ -73,7 +71,7 @@ const scrollUp = () => {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/* =============== SCROLL SECTIONS ACTIVE LINK =============== */
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
@@ -94,7 +92,7 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/* =============== SCROLL REVEAL ANIMATION =============== */
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',

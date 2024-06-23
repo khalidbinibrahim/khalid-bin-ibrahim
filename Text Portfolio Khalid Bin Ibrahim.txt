@@ -72,7 +72,6 @@ React
 
 Git & GitHub
 Figma
-Sketch
 
 
 ========== SERVICES ==========
