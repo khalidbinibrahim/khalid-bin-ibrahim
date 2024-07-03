@@ -67,28 +67,28 @@ const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
 
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-                        : scrollUp.classList.remove('show-scroll')
+        : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
 /* =============== SCROLL SECTIONS ACTIVE LINK =============== */
 const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollDown = window.scrollY
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
+const scrollActive = () => {
+    const scrollDown = window.scrollY
 
-		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
+
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add('active-link')
+        } else {
+            sectionsClass.classList.remove('active-link')
+        }
+    })
 }
 window.addEventListener('scroll', scrollActive)
 
@@ -102,7 +102,32 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home_data, .home_social, .contact_container, .footer_container`)
-sr.reveal(`.home_image`, {origin: 'bottom'})
-sr.reveal(`.about_data, .skills_data`, {origin: 'left'})
-sr.reveal(`.about_image, .skills_content`, {origin: 'right'})
-sr.reveal(`.services_card, .projects_card`, {interval: 100})
+sr.reveal(`.home_image`, { origin: 'bottom' })
+sr.reveal(`.about_data, .skills_data`, { origin: 'left' })
+sr.reveal(`.about_image, .skills_content`, { origin: 'right' })
+sr.reveal(`.services_card, .projects_card`, { interval: 100 })
+
+/* =============== ULTIMATE HACKER EFFECT =============== */
+// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// document.getElementById('home-title').onmouseover = e => {
+//     let interations = 0;
+
+//     const interval = setInterval(() => {
+//         e.target.innerText = e.target.innerText.split("")
+//             .map((letter, index) => {
+//                 if(index < interations) {
+//                     return e.target.dataset.value[index];
+//                 }
+
+//                 return letters[Math.floor(Math.random() * 26)]
+//             })
+//             .join("");
+
+//         if (interations >= e.target.dataset.value.length) {
+//             clearInterval(interval);
+//         }
+
+//         interations += 1 / 3;
+//     }, 30)
+// }
