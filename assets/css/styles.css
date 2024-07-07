@@ -317,10 +317,10 @@ svg {
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
 
-/* .home_img {
+.home_img {
   width: 900px;
   transform: translateX(-120px);
-} */
+}
 
 /* =============== BUTTON =============== */
 .button {
@@ -364,6 +364,11 @@ svg {
 
 .about_blob path {
   stroke: var(--first-color);
+}
+
+.about_img {
+  width: 900px;
+  transform: translateX(-120px);
 }
 
 /* =============== SKILLS =============== */
